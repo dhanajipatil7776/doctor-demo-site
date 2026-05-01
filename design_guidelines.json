@@ -1,0 +1,155 @@
+{
+  "design_system": {
+    "theme": "LIGHT",
+    "archetype": "Archetype 1: Organic & Earthy (Modified for Medical Trust)",
+    "philosophy": "Grounded, warm, inviting, trustworthy. Replaces cold clinical vibes with approachable, highly-legible, human-centric design.",
+    "colors": {
+      "background": {
+        "page": "#FDFBF7",
+        "surface": "#FFFFFF",
+        "surface_secondary": "#F3F4F6"
+      },
+      "brand": {
+        "primary": "#0369A1",
+        "primary_hover": "#0284C7",
+        "secondary": "#166534",
+        "accent": "#F59E0B"
+      },
+      "text": {
+        "primary": "#1C1917",
+        "secondary": "#57534E",
+        "inverse": "#FFFFFF"
+      },
+      "specific": {
+        "whatsapp": "#25D366",
+        "whatsapp_hover": "#1EBE5D",
+        "call_cta": "#0369A1"
+      }
+    },
+    "typography": {
+      "headings": {
+        "family": "Outfit, sans-serif",
+        "weight": "font-semibold to font-bold",
+        "letter_spacing": "tracking-tight"
+      },
+      "body": {
+        "family": "Manrope, sans-serif",
+        "weight": "font-normal to font-medium",
+        "letter_spacing": "tracking-normal",
+        "line_height": "leading-relaxed"
+      },
+      "hierarchy": {
+        "h1": "text-4xl sm:text-5xl lg:text-6xl",
+        "h2": "text-3xl sm:text-4xl",
+        "h3": "text-xl sm:text-2xl",
+        "body": "text-base sm:text-lg"
+      }
+    },
+    "spacing_and_layout": {
+      "container_padding": "px-4 sm:px-6 lg:px-8",
+      "section_spacing": "py-16 sm:py-24",
+      "gap_system": "gap-6 sm:gap-8 lg:gap-12",
+      "border_radius": "rounded-2xl",
+      "shadows": "shadow-[0_8px_30px_rgb(0,0,0,0.04)]"
+    }
+  },
+  "key_components": {
+    "buttons": {
+      "primary": "bg-sky-700 hover:bg-sky-600 text-white rounded-2xl px-8 py-4 font-semibold transition-all hover:scale-[1.02]",
+      "whatsapp": "bg-[#25D366] hover:bg-[#1EBE5D] text-white rounded-2xl px-8 py-4 font-semibold transition-all hover:scale-[1.02] flex items-center justify-center gap-2",
+      "outline": "border-2 border-stone-200 hover:border-sky-700 text-stone-900 rounded-2xl px-8 py-4 font-semibold transition-all"
+    },
+    "cards": {
+      "service": "bg-white p-8 rounded-2xl shadow-sm border border-stone-100 hover:shadow-md transition-all",
+      "testimonial": "bg-stone-50 p-8 rounded-3xl border border-stone-200"
+    },
+    "sticky_mobile_cta": {
+      "classes": "fixed bottom-0 left-0 right-0 p-4 bg-white border-t border-stone-200 flex gap-3 md:hidden z-[100] shadow-[0_-4px_20px_rgba(0,0,0,0.05)]",
+      "layout": "grid grid-cols-2 w-full"
+    }
+  },
+  "page_sections": [
+    {
+      "name": "Header",
+      "instructions": "Sticky at top, z-50. Glassmorphism backdrop-blur-md bg-white/80. Left: Clinic Name/Logo. Right: Desktop Nav + 'Call Now' CTA. Mobile: Hamburger menu.",
+      "components": ["Logo", "Navigation", "Call CTA"]
+    },
+    {
+      "name": "Hero",
+      "instructions": "Split layout. Left side: High impact H1 'Your Smile, Our Priority', Trust subheadline, and side-by-side 'Call Now' & 'WhatsApp' CTAs. Right side: Overlapping cards—Main image is clinic_hero_bg, with a floating badge/card showing doctor_portrait and '15+ Years Exp' text.",
+      "components": ["H1", "Dual CTAs", "Image Overlay Layout"]
+    },
+    {
+      "name": "Doctor Profile",
+      "instructions": "Asymmetric bento grid. Image of Dr. Sharma taking up a tall column, with text taking up the adjacent column. Include bullet points of credentials (BDS, MDS, 15+ years experience).",
+      "components": ["Portrait", "Credentials List"]
+    },
+    {
+      "name": "Services",
+      "instructions": "Grid layout (grid-cols-1 md:grid-cols-2 lg:grid-cols-3). Solid white cards on off-white bg. Use clear lucide-react icons or service_tools image for aesthetic enhancement.",
+      "components": ["Service Cards", "Icons"]
+    },
+    {
+      "name": "Testimonials",
+      "instructions": "Carousel or grid of patient reviews. Use star icons (text-amber-400). Round profile images. Focus on empathy and pain-free experiences.",
+      "components": ["Testimonial Cards", "Star Rating"]
+    },
+    {
+      "name": "Appointment Booking / Contact",
+      "instructions": "Two-column layout. Left: Simple Shadcn form (Name, Phone, Date Picker, Service). Right: Contact details (Address, MapPin, Working Hours) + embedded Google Maps iframe.",
+      "components": ["Form", "Google Maps iframe", "Contact Info"]
+    },
+    {
+      "name": "FAQ",
+      "instructions": "Use Shadcn Accordion. Keep it narrow (max-w-3xl) and centered for readability. Questions about insurance, pain, consultation fees.",
+      "components": ["Accordion"]
+    }
+  ],
+  "media": {
+    "images": {
+      "clinic_hero_bg": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/843dfdd7-8a2c-4316-93c8-bb26895b6752/images/914eedab4e45bcd180e338a5626b2809c81651d0429596a181c2839e8b7badc3.png",
+        "description": "Premium modern dental clinic reception area. Clean white and light teal colors. Soft warm sunlight.",
+        "usage": "Hero section right-side background or visual."
+      },
+      "doctor_portrait": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/843dfdd7-8a2c-4316-93c8-bb26895b6752/images/37abb6bc9bc30cc8ff196639fc2982daeb2b89193cfe1d31a9ac9bc1c065c263.png",
+        "description": "High-quality professional portrait of Dr. Sharma in a clinic setting.",
+        "usage": "Doctor Profile section and floating trust badge in Hero."
+      },
+      "service_tools": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/843dfdd7-8a2c-4316-93c8-bb26895b6752/images/e5d7e92368d219591f0fefb5c16732d249ea8edc8defead109646f4a3cfcb8a7.png",
+        "description": "Close-up macro shot of pristine dental tools on a medical tray.",
+        "usage": "Services section visual anchor or background texture."
+      },
+      "patient_1": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/843dfdd7-8a2c-4316-93c8-bb26895b6752/images/a91d8cfbf31610bae60fb43a0da877da10b7d8e3d691660a4eb2dab50da4ae00.png",
+        "description": "Happy older Indian man smiling warmly.",
+        "usage": "Testimonials section avatar/image."
+      },
+      "patient_2": {
+        "url": "https://images.unsplash.com/photo-1758600587683-d86675a2f6e9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHwyfHxoYXBweSUyMHBhdGllbnQlMjBwZXJmZWN0JTIwc21pbGV8ZW58MHx8fHwxNzc3NjM2MTU2fDA&ixlib=rb-4.1.0&q=85",
+        "description": "A smiling patient with dark hair.",
+        "usage": "Testimonials section avatar/image."
+      },
+      "patient_3": {
+        "url": "https://images.pexels.com/photos/11956947/pexels-photo-11956947.jpeg",
+        "description": "A smiling woman at a dental clinic holding a dental tool.",
+        "usage": "Testimonials section avatar/image or secondary decorative image."
+      }
+    }
+  },
+  "testing_requirements": {
+    "attributes": "All interactive and key informational elements MUST include a data-testid attribute in kebab-case, role-based (e.g., data-testid='call-cta-button', data-testid='whatsapp-sticky-button')."
+  },
+  "instructions_to_main_agent": [
+    "Strictly follow the color palette. No full-screen gradients. Keep backgrounds solid and clean.",
+    "Ensure all text contrast meets APCA/WCAG standards.",
+    "Do NOT use 'Inter' for headings. Use 'Outfit' for headings and 'Manrope' for body.",
+    "The Sticky Mobile CTA is mission-critical. It MUST be fixed at the bottom of the screen on mobile devices (md:hidden) with a high z-index and flex layout.",
+    "Do NOT use generic Shadcn cards everywhere. Mix flat shapes with subtle rounded corners.",
+    "Make sure forms use the Shadcn UI primitives but customized to match the spacing and rounding (xl) of the brand.",
+    "Include hover states (bg color change + text color change) on all interactive elements.",
+    "Do not use placeholder image URLs. Only use the images provided in the media section of this JSON."
+  ]
+}
